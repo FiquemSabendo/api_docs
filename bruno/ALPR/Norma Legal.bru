@@ -1,0 +1,19 @@
+meta {
+  name: Norma Legal
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url}}/norma-legal/:codigo
+  body: none
+  auth: inherit
+}
+
+params:path {
+  codigo: 994
+}
+
+settings {
+  encodeUrl: true
+}

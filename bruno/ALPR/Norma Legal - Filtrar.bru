@@ -1,0 +1,34 @@
+meta {
+  name: Norma Legal - Filtrar
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url}}/norma-legal/filtrar
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "codigoNormaLegal": 994  // Código da proposição
+    //, "codigoTipoNormaLegal": 11  // Código do tipo da proposição
+    //, "descricaoTipoNormaLegal": "Indicação"  // Descrição do tipo da proposição
+    //, "dataInicial": "2025-05-09T03:00:00.000Z"  // Data inicial
+    //, "dataFinal": "2025-05-09T03:00:00.000Z"  // Data final
+    //, "codigoAssunto": 1  // Código do assunto
+    //, "assunto": "Educação"  // Assunto
+    //, "emenda": "CONCEDE O TÍTULO DE UTILIDADE..."  // Emenda
+    //, "numero": 940  // Número da norma legal
+    //, "ano": 2025  // Ano da proposição
+    //, "autor": "João da Silva"  // Nome do deputado autor do processo
+    //, "palavraChave": "Proteção"  // Palavra-chave associada
+    //, "situacaoConclusaoNormaLegal": "Sancionada"  // Busca pela situação do processo
+    //, "numeroMaximoRegistro": 100  // Número máximo de registros retornados na busca
+  }
+}
+
+settings {
+  encodeUrl: true
+}

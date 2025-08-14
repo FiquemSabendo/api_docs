@@ -1,0 +1,55 @@
+meta {
+  name: Proposicao - Filtrar
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{url}}/proposicao/filtrar
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~codigoProposicao: 994
+  ~dataInicial: 2025-05-09T03:00:00.000Z
+  ~dataFinal: 2025-05-09T03:00:00.000Z
+  ~codigoTipoProposicao: 011
+  ~descricaoTipoProposicao: INDICAÇÃO
+  ~codigoAssunto: 001
+  ~assunto: EDUCAÇÃO
+  ~numero: 940
+  ~ano: 2025
+  ~emenda: 
+  ~autor: 
+  ~palavraChave: 
+  ~situacaoProposicao: 
+  ~numeroMaximoRegistro: 
+}
+
+body:json {
+  {
+    "codigoProposicao": 994  // Código da proposição
+    //, "codigoTipoProposicao": 1  // Código do tipo da proposição
+    //, "descricaoTipoProposicao": "INDICAÇÃO"  // Descrição do tipo da proposição
+    //, "dataInicial": "2025-05-09T03:00:00.000Z"  // Data inicial
+    //, "dataFinal": "2025-05-09T03:00:00.000Z"  // Data final
+    //, "codigoAssunto": 1  // Código do assunto
+    //, "assunto": "EDUCAÇÃO"  // Assunto
+    //, "emenda": "PROPÕE A IMPLANTAÇÃO DO CURSO DE DIREITO NA UNIVERSIDADE..."  // Emenda
+    //, "numero": 940  // Número da proposição
+    //, "ano": 2025  // Ano da proposição
+    //, "autor": "João da Silva"  // Nome do deputado autor do processo
+    //, "palavraChave": "Serviços"  // Palavra-chave associada
+    //, "situacaoProposicao": "Tramitando"  // Busca pela situação do processo
+    //, "numeroMaximoRegistro": 100  // Número máximo de registros retornados na busca
+  }
+}
+
+body:form-urlencoded {
+  codigoProposicao: 994
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Proposicao
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/proposicao/:codigo
+  body: none
+  auth: inherit
+}
+
+params:path {
+  codigo: 994
+}
+
+settings {
+  encodeUrl: true
+}
