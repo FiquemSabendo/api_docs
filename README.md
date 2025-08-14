@@ -1,6 +1,6 @@
 # API Docs
 
-Neste repositório guardamos colećões de APIs feitas usando o [Bruno][bruno], um cliente de APIs semelhante ao Postman.
+Neste repositório guardamos coleções de APIs feitas usando o [Bruno][bruno], um cliente de APIs semelhante ao Postman.
 
 ## Usando
 
